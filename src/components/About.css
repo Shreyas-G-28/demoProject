@@ -1,0 +1,47 @@
+.about-section {
+    padding: 6rem 2rem;
+    background-color: #f0f2f5;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .about-section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .about-section p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .about-section .background-graphic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150%;
+    height: auto;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.05;
+  }
+  
+  .about-section .background-graphic circle {
+    fill: #007bff;
+  }
+  
+  .about-section .background-graphic circle:last-child {
+    fill: #6c757d;
+    opacity: 0.8;
+  }
+  
