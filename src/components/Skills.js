@@ -20,7 +20,6 @@ const Skills = () => {
     { name: 'Bootstrap5', description: 'Experienced with Bootstrap 5 for responsive design.', icon: faBootstrap },
     { name: 'Docker', description: 'Experienced with containerization using Docker.', icon: faDocker },
     { name: 'Jest', description: 'Proficient in using Jest for testing JavaScript applications.', icon: faJsSquare }, // Jest doesn't have a specific Font Awesome icon
-    { name: 'Git', description: 'Proficient in version control using Git and GitHub.', icon: faGitAlt },
     { name: 'Firebase', description: 'Experienced with Firebase for backend services.', icon: faCode }, // Firebase doesn't have a specific Font Awesome icon
     { name: 'Data Structures and Algorithms', description: 'Strong understanding of data structures and algorithms.', icon: faPencilRuler }, // No specific icon for this
     { name: 'NextJs', description: 'Skilled in building server-side rendered applications with Next.js.', icon: faReact }
@@ -28,7 +27,6 @@ const Skills = () => {
 
   const tools = [
     { name: 'MS Office', description: 'Proficient in Microsoft Office Suite.', icon: faMicrosoft },
-    { name: 'Excel', description: 'Experienced with Excel for data manipulation.', icon: faCode }, // No specific icon for Excel
     { name: 'VS Code', description: 'Skilled in using Visual Studio Code for development.', icon: faCode },
     { name: 'Git', description: 'Experienced in version control using Git.', icon: faGitAlt },
     { name: 'GitLab', description: 'Proficient with GitLab for CI/CD and version control.', icon: faGitlab },

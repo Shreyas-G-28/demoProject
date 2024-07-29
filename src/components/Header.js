@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Header.css";
+import profilePicture from "./images/profilePhoto.png"; // Add your profile picture here
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +12,13 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="nav">
-        <div className="logo">MyPortfolio</div>
+        <div className="logo">
+          <img src={profilePicture} alt="Profile" className="profile-picture" />
+          <div>
+            <div className="name">Shreyas Acharya</div>
+            <div className="designation">Front-End Developer</div>
+          </div>
+        </div>
         <button className="menu-toggle" onClick={toggleMenu}>
           ☰
         </button>

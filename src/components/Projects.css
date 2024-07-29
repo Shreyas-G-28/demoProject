@@ -1,101 +1,69 @@
+/* Projects.css */
+
 .projects-section {
-    padding: 6rem 2rem;
-    background-color: #fff;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .projects-section h2 {
-    font-size: 2.8rem;
-    margin-bottom: 1.5rem;
-    color: #333;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .project-card {
-    border: 1px solid #ddd;
-    padding: 1.5rem;
-    width: 300px;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .project-card h3 {
-    margin: 0;
-    color: #007bff;
-  }
-  
-  .project-card p {
-    margin: 0.5rem 0 1rem;
-    color: #666;
-  }
-  
-  .project-card a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .project-card a:hover {
-    text-decoration: underline;
-  }
-  
-  @keyframes float {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-  
-  .projects-section .background-graphic {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: #007bff;
-    opacity: 0.1;
-    animation: float 4s ease-in-out infinite;
-    z-index: 0;
-  }
-  
-  .projects-section .background-graphic:nth-child(1) {
-    top: 10%;
-    left: 20%;
-    animation-delay: 0s;
-  }
-  
-  .projects-section .background-graphic:nth-child(2) {
-    top: 30%;
-    left: 70%;
-    animation-delay: 2s;
-  }
-  
-  .projects-section .background-graphic:nth-child(3) {
-    top: 60%;
-    left: 40%;
-    animation-delay: 4s;
-  }
-  
+  background-color: #000; /* Black background */
+  color: #fff; /* White text color */
+  padding: 40px;
+  position: relative;
+  text-align: center;
+}
+
+.projects-section h2 {
+  color: #d7bde2;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #222; /* Dark grey background for cards */
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(255, 87, 51, 0.3); /* Adding a shadow effect */
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #d1f2eb; /* Vibrant color for project titles */
+}
+
+.project-card p {
+  font-size: 1.1rem;
+  color: #fff; /* White color for descriptions */
+  margin-bottom: 20px;
+}
+
+.project-card a {
+  color: #d1f2eb; /* Vibrant color for links */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.project-card a:hover {
+  color: #ff5733; /* Color change on hover for links */
+}
+
+.background-graphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.2; /* Slight transparency for the background graphic */
+  z-index: -1; /* Ensure the graphic stays in the background */
+}
